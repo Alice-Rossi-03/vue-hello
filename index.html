@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,20 @@
 </head>
 <body>
     
+    <header id="top-header">
+        <h1 class="text-center my-3">
+            {{ message }}
+        </h1>
+    </header>
+
+    <main id="img-container">
+        <div>
+            <figure>
+                <img v-bind:src="srcImg" alt="img" class=" w-25 d-block mx-auto">
+            </figure>
+        </div>
+       
+    </main>
 
 
 
